@@ -13,7 +13,7 @@ const server = http.createServer(app);
 
 const io = socketio(server, {
   cors: {
-    origin: "https://chatterbox-backend1.onrender.com",
+    origin: "https://chatter-p99y7jx5s-sam7244.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
