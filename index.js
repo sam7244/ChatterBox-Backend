@@ -6,15 +6,14 @@ const { addUser, removeUser, getUser, getUsersInRoom } = require("./users.js");
 
 const router = require("./router");
 
-const PORT = 3030;
+const PORT = "https://chatterbox-backend1.onrender.com";
 const app = express();
 
 const server = http.createServer(app);
 
-
 const io = socketio(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://chatterbox-backend1.onrender.com",
     methods: ["GET", "POST"],
     credentials: true,
   },
