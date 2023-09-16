@@ -6,7 +6,7 @@ const { addUser, removeUser, getUser, getUsersInRoom } = require("./users.js");
 
 const router = require("./router");
 
-const PORT = "https://chatterbox-backend1.onrender.com";
+const PORT = 3030;
 const app = express();
 
 const server = http.createServer(app);
